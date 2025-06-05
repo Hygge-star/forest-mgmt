@@ -28,9 +28,9 @@
     </div>
     <!-- 主内容区 -->
     <main class="app-main">
-      <MapView />
       <AlertSystem />
-      <AIDetection />
+      <AIDection />
+      <MapView />
     </main>
 
     <!-- 状态栏 -->
@@ -50,8 +50,10 @@
 
 <script>
 import MapView from "./views/MapView.vue";
+import AlertSystem from "./views/AlertSystem.vue";
+import AIDection from "./views/AIDection.vue";
 export default {
-  components: { MapView },
+  components: { MapView, AlertSystem, AIDection },
   data() {
     return {
       currentView: "map",
